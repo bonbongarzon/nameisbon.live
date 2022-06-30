@@ -5,22 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>nameisbon</title>
 </head>
 
 <body>
 
     <section>
-        <div class="main-container">
+        <div class="main-container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             <h1>Annyeong, I'm Bon! 👋 – a Visual Designer based in Manila, Philippines.
                 My website is currently taking a break. Please reach out to me through <a href="mailto:bonbongarzon18@gmail.com">bonbongarzon18@gmail.com</a> .</h1>
         </div>
 
     </section>
 
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
 </body>
 
 </html>
