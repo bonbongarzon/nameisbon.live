@@ -113,3 +113,27 @@ h1 {
 
 
 }
+
+@media all and (max-width: 400px) {
+
+    html, body {
+        margin:0px;
+        height:100%;
+      }
+
+    body {
+        transition: ease all 1s;
+        background-color: rgb(255, 255, 255);
+    }
+    h1 {
+        font-size: 10pt;
+        color: rgb(41, 41, 41);
+    }
+
+    .main-container {
+        width: 90%;
+
+    }
+
+
+}
