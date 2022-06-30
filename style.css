@@ -90,7 +90,7 @@ h1 {
 
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 600px) {
 
     html, body {
         margin:0px;
