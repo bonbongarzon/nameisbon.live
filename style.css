@@ -6,11 +6,13 @@
     overflow-x: hidden;
 
 }
-html, body {
-    margin:0px;
-    height:100%;
+
+html,
+body {
+    margin: 0px;
+    height: 100%;
     transition: ease all 1s;
-  }
+}
 
 
 section {
@@ -20,6 +22,7 @@ section {
     align-items: center;
     justify-content: center
 }
+
 .main-container {
     display: flex;
     width: 80%;
@@ -45,15 +48,17 @@ h1 {
 
 @media all and (max-width: 1150px) {
 
-    html, body {
-        margin:0px;
-        height:100%;
-      }
+    html,
+    body {
+        margin: 0px;
+        height: 100%;
+    }
 
     body {
         transition: ease all 1s;
         background-color: rgb(0, 0, 0);
     }
+
     h1 {
         color: rgb(255, 255, 255);
     }
@@ -69,21 +74,24 @@ h1 {
 
 @media all and (max-width: 800px) {
 
-    html, body {
-        margin:0px;
-        height:100%;
-      }
+    html,
+    body {
+        margin: 0px;
+        height: 100%;
+    }
 
     body {
         transition: ease all 1s;
         background-color: rgb(255, 255, 255);
     }
+
     h1 {
         color: rgb(41, 41, 41);
     }
 
     .main-container {
         width: 90%;
+        padding: 10px;
 
     }
 
@@ -92,15 +100,17 @@ h1 {
 
 @media all and (max-width: 500px) {
 
-    html, body {
-        margin:0px;
-        height:100%;
-      }
+    html,
+    body {
+        margin: 0px;
+        height: 100%;
+    }
 
     body {
         transition: ease all 1s;
         background-color: rgb(253, 39, 39);
     }
+
     h1 {
         font-size: 12pt;
         color: rgb(41, 41, 41);
@@ -108,7 +118,7 @@ h1 {
 
     .main-container {
         width: 100%;
-padding: 10px;
+        padding: 10px;
     }
 
 
