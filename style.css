@@ -20,9 +20,7 @@ section {
     justify-content: center;
     height: 100vh;
     align-items: center;
-    justify-content: center;
-    background-color: yellow;
-        
+    justify-content: center
 }
 
 .main-container {
@@ -110,15 +108,15 @@ h1 {
 
     body {
         transition: ease all 1s;
-        background-color: rgb(253, 39, 39);
+        background-color: black;
     }
 
     h1 {
         font-size: 12pt;
-        color: rgb(41, 41, 41);
+        color:white;
     }
 
-    .main-container {
+    .main-containaer {
         width: 100%;
         padding: 10px;
     }
