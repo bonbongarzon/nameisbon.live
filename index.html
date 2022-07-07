@@ -11,6 +11,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSSv2.css">
+    <link rel="stylesheet" href="DMv2.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>nameisbon</title>
@@ -25,12 +26,12 @@
 <script src="JSv2.js"></script>
 
 
-<header>
+<header class="parent">
     <nav>
         <span>BG - 22 ©</span>
         <ul class="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Let's Talk</a></li>
+            <li class="nav-linky"><a href="#">About</a></li>
+            <li class="nav-linky"><a href="#">Let's Talk</a></li>
         </ul>
     </nav>
 </header>
@@ -38,37 +39,32 @@
 
 <body>
 
-<div class="cursor"></div>
-    
-        <section>
-        <div class="main-container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-            <h1>Annyeong, I'm Bon! 👋 – a Visual Designer based in Manila, Philippines.
-                My website is currently taking a break. Please reach out to me through <a href="mailto:bonbongarzon18@gmail.com">bonbongarzon18@gmail.com</a> .</h1>
-        </div>
 
-    </section>
-
-
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 3000,
-        once: true,
-      });
-    </script>
-<!--     <section>
+    <main id="body">
+        <div class="cursor"></div>
         <div class="main-hero">
             <div class="main-hero-left">
-                <h1>
-                    Hey! I’m Bonbon Garzon, a Visual Designer and Video Editor based in Cavite, Philippines. Projects
+                <div>
+                    <marquee id="noticestatement" class="noticestatement" behavior="scroll" direction="left"> <pre> THIS WEBSITE IS CURRENTLY TAKING A BREAK                                  Please reach out to me through <a href="mailto:bonbongarzon18@gmail.com">bonbongarzon18@gmail.com</a> </pre></marquee>
+                </div>
+                <h1 id="noticestatement">
+                    Hey! I’m Bonbon Garzon, a <strike>Visual Designer</strike>  and Video Editor based in Cavite, Philippines. </h1>
+                </h1>
+                <!-- <h1>
+                    Hey! I’m Bonbon Garzon, a <strike>Visual Designer</strike>  and Video Editor based in Cavite, Philippines. Projects
                     and subjects that interest him include digital communities, films & film-making, and emotional
                     connection in various digital spaces.
-                </h1>
+                </h1> -->
             </div>
+            <!-- <div class="main-hero-right">
+                <img class="hero--avatar" src="Resources_v2/nameisbon.svg" srcset="
+                ./static/media/avatar@3x.e88c9dda.jpg 2x, 
+                ./static/media/avatar@4x.686ec14c.jpg 3x
+              " alt="Jesus Sandrea Avatar">
+            </div> -->
         </div>
 
-    </section> -->
+    </main>
 
 
 
