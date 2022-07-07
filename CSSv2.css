@@ -6,18 +6,39 @@
   margin: 0;
   font-family: 'Lexend';
   font-style: normal;
+  transition: 0.2s;
 }
 
 
+html,body{
+  background-color: #fafafa;
+}
 
 .cursor{
   width: 3rem;
   height: 3rem;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   transform: translate(-50%,-50%);
   pointer-events: none;
+  background-color: white;
+  mix-blend-mode: difference;
+  /* transition: 0.1s; */
+}
+.noticestatement{
+  font-size: 10pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+}
+
+.parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
 }
 
 nav{
@@ -27,6 +48,7 @@ nav{
   min-height: 10vh;
   align-items: center;
   margin: auto;
+
 
 }
 
@@ -47,10 +69,13 @@ nav{
 .main-hero{
   padding: 150px;
   display: flex;
+  width: 75%;
+  flex-wrap: wrap;
 
 }
 
 .main-hero-left h1{
-  width: 800px;
   font-weight: 200;
+  font-size: 30pt;
 }
+
