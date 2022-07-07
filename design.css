@@ -1,0 +1,25 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.main-header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
+    background-color: aqua;
+    padding: 20px 10px;
+    font-family: Inter;
+}
+
+.header-nav{border: solid black 1pt;}
+
+.header-nav .navA {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #686868;
+}
