@@ -8,144 +8,35 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="CSSv2.css">
-    <link rel="stylesheet" href="DMv2.css">
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>nameisbon</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="GSdesign.css">
 </head>
-
-
-<script>
-    
-    let mouseCursor = document.querySelector(".cursor");
-window.addEventListener('mousemove',cursor);
-
-function cursor(e){
-    console.log(e);
-    document.querySelector(".cursor").style.top = e.pageY + "px";
-    document.querySelector(".cursor").style.left = e.pageX + "px";
-    // document.querySelector(".cursor").style.mixBlendMode = "difference";
-}
-
-
-// const body = document.querySelector("body");
-
-
-
-
-
-
-const maincolor = "#fafafa";
-const darkcolor = "black"
-
-
-window.addEventListener("scroll",function(event){
-    var scroll = this.scrollY;
-    console.log(scroll);
-
-    if(scroll>50){
-
-        document.querySelector("html").style.backgroundColor = darkcolor;
-        document.querySelector("body").style.backgroundColor = darkcolor;
-
-        const nodeList = document.querySelectorAll("#noticestatement");
-for (let i = 0; i < nodeList.length; i++) {
-  nodeList[i].style.color = maincolor;
-}
-        // document.querySelector("#noticestatement").style.color = maincolor;
-
-    } else {
-        document.querySelector("body").style.backgroundColor = null;
-        const nodeList = document.querySelectorAll("#noticestatement");
-        for (let i = 0; i < nodeList.length; i++) {
-            nodeList[i].style.color = null;
-          }
-    }
-})
-
-
-
-
-// const bottom = document.querySelector(".bottom");
-
-
-// window.addEventListener("scroll",function(event){
-//     var scroll = this.scrollY;
-//     console.log(scroll);
-
-//     if(scroll>350){
-//         bottom.style.backgroundColor = "black";
-//     } else {
-//         bottom.style.backgroundColor = "white";
-//     }
-// })
-
-
-
-
-
-
-
-// document.addEventListener('mousemove',(e) =>{
-
-//     mouseCursor.getElementsByClassName.style.top = e.pageY + "px";
-//     mouseCursor.getElementsByClassName.style.left = e.pageX + "px";
-    
-
-
-// })
-
-</script>
-
-
-<header class="parent">
-    <nav>
-        <span>BG - 22 ©</span>
-        <ul class="nav-links">
-            <li class="nav-linky"><a href="#">About</a></li>
-            <li class="nav-linky"><a href="#">Let's Talk</a></li>
-        </ul>
+<header class="navbar">
+    <nav class="navbar-content">
+        <span class="logo-place">BG - 22 ©</span>
+        <a href="#">About</a></li>
+        <a href="#">Let's Talk</a></li>
     </nav>
 </header>
-
-
 <body>
+            <div class="cursor"></div>
 
 
-    <main id="body">
-        <div class="cursor"></div>
-        <div class="main-hero">
-            <div class="main-hero-left">
-                <div>
-                    <marquee id="noticestatement" class="noticestatement" behavior="scroll" direction="left"> <pre> THIS WEBSITE IS CURRENTLY TAKING A BREAK                                  Please reach out to me through <a href="mailto:bonbongarzon18@gmail.com">bonbongarzon18@gmail.com</a> </pre></marquee>
+            <main>
+                <div class="sectionA">
+                    <marquee id="noticestatement" class="noticestatement" behavior="scroll" direction="left">
+                        <pre> THIS WEBSITE IS CURRENTLY TAKING A BREAK                                  Please reach out to me through <a href="mailto:bonbongarzon18@gmail.com">bonbongarzon18@gmail.com</a> </pre>
+                    </marquee>
+                    <h1>
+                        Hey! I’m Bonbon Garzon, a <strike>Visual Designer</strike>  and Video Editor based in Cavite, Philippines.
+                    </h1>
                 </div>
-                <h1 id="noticestatement">
-                    Hey! I’m Bonbon Garzon, a <strike>Visual Designer</strike>  and Video Editor based in Cavite, Philippines. </h1>
-                </h1>
-                <!-- <h1>
-                    Hey! I’m Bonbon Garzon, a <strike>Visual Designer</strike>  and Video Editor based in Cavite, Philippines. Projects
-                    and subjects that interest him include digital communities, films & film-making, and emotional
-                    connection in various digital spaces.
-                </h1> -->
-            </div>
-            <!-- <div class="main-hero-right">
-                <img class="hero--avatar" src="Resources_v2/nameisbon.svg" srcset="
-                ./static/media/avatar@3x.e88c9dda.jpg 2x, 
-                ./static/media/avatar@4x.686ec14c.jpg 3x
-              " alt="Jesus Sandrea Avatar">
-            </div> -->
-        </div>
+                <footer></footer>
+            </main>
 
-    </main>
-
-
-
+            <script src="JSv2.js"></script>
 </body>
+
+</html>
