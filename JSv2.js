@@ -1,78 +1,88 @@
-let mouseCursor = document.querySelector(".cursor");
-window.addEventListener('mousemove',cursor);
-
-function cursor(e){
-    console.log(e);
-    document.querySelector(".cursor").style.top = e.pageY + "px";
-    document.querySelector(".cursor").style.left = e.pageX + "px";
-    // document.querySelector(".cursor").style.mixBlendMode = "difference";
-}
-
-
-// const body = document.querySelector("body");
-
-
-
-
-
-
 const maincolor = "#fafafa";
 const darkcolor = "black"
 
 
-window.addEventListener("scroll",function(event){
+// let mouseCursor = document.querySelector(".cursor");
+// window.addEventListener('mousemove',cursor);
+
+// function cursor(e){
+//     console.log(e);
+//     document.querySelector(".cursor").style.top = e.pageY + "px";
+//     document.querySelector(".cursor").style.left = e.pageX + "px";
+// }
+
+
+
+const cursorRounded = document.querySelector('.cursor');
+
+
+const moveCursor = (e) => {
+    var x = e.clientX;
+    var y = e.clientY;
+    cursorRounded.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+    cursorRounded.style.display = "initial";
+
+}
+
+window.addEventListener('mousemove', moveCursor)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const maincontent = document.querySelector('main');
+const navsection = document.querySelector('a');
+window.addEventListener("scroll", function (event) {
     var scroll = this.scrollY;
     console.log(scroll);
 
-    if(scroll>50){
+    if (scroll > 50) {
 
-        document.querySelector("html").style.backgroundColor = darkcolor;
-        document.querySelector("body").style.backgroundColor = darkcolor;
+        maincontent.style.backgroundColor = "black";
 
-        const nodeList = document.querySelectorAll("#noticestatement");
-for (let i = 0; i < nodeList.length; i++) {
-  nodeList[i].style.color = maincolor;
-}
-        // document.querySelector("#noticestatement").style.color = maincolor;
+        Object.values(document.body.getElementsByTagName("h1")).forEach(e => {
+            e.style.color = "#fafafa"
+        });
 
+        Object.values(document.body.querySelectorAll("span,a,pre")).forEach(e => {
+            e.style.color = "#fafafa"
+        });
+   
+   
+   
     } else {
-        document.querySelector("body").style.backgroundColor = null;
-        const nodeList = document.querySelectorAll("#noticestatement");
-        for (let i = 0; i < nodeList.length; i++) {
-            nodeList[i].style.color = null;
-          }
+        maincontent.style.backgroundColor = "#fafafa";
+
+        Object.values(document.body.getElementsByTagName("h1")).forEach(e => {
+            e.style.color = null;
+        });
+        Object.values(document.body.querySelectorAll("span,a,pre")).forEach(e => {
+            e.style.color =null;
+        });
     }
 })
 
 
 
 
-// const bottom = document.querySelector(".bottom");
-
-
-// window.addEventListener("scroll",function(event){
-//     var scroll = this.scrollY;
-//     console.log(scroll);
-
-//     if(scroll>350){
-//         bottom.style.backgroundColor = "black";
-//     } else {
-//         bottom.style.backgroundColor = "white";
-//     }
-// })
 
 
 
 
 
-
-
-// document.addEventListener('mousemove',(e) =>{
-
-//     mouseCursor.getElementsByClassName.style.top = e.pageY + "px";
-//     mouseCursor.getElementsByClassName.style.left = e.pageX + "px";
-    
-
-
-// })
 
